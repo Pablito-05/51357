@@ -1,0 +1,9 @@
+class Interpreter extends JuegoListener {
+  enterImprimir(ctx) {
+    const text = ctx.texto().getText();
+    console.log(`console.log(${text});`);
+  }
+  // Agregar más funciones enterXXX para otros nodos
+}
+
+antlr4.tree.ParseTreeWalker.DEFAULT.walk(new Interpreter(), tree);
