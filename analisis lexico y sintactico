@@ -1,0 +1,26 @@
+const antlr4 = require('antlr4');
+const fs = require('fs');
+const JuegoLexer = require('./parser/JuegoLexer').JuegoLexer;
+const JuegoParser = require('./parser/JuegoParser').JuegoParser;
+const JuegoListener = require('./parser/JuegoListener').JuegoListener;
+
+class ErrorListener extends antlr4.error.ErrorListener {
+  syntaxError(recognizer, offendingSymbol, line, column, msg) {
+    console.error(`Error en línea ${line}:${column} - ${msg}`);
+  }
+}
+
+const input = fs.readFileSync('input.txt', 'utf8');
+const chars = new antlr4.InputStream(input);
+const lexer = new JuegoLexer(chars);
+lexer.removeErrorListeners();
+lexer.addErrorListener(new ErrorListener());
+
+const tokens = new antlr4.CommonTokenStream(lexer);
+const parser = new JuegoParser(tokens);
+parser.removeErrorListeners();
+parser.addErrorListener(new ErrorListener());
+
+const tree = parser.juego(); // Punto de entrada
+
+console.log("Análisis léxico y sintáctico exitoso.");
