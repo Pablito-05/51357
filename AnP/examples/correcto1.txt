@@ -1,0 +1,4 @@
+programa Test {
+  a = 3 + 4 * 2;
+  imprimir(a);
+}

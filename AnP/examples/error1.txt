@@ -1,0 +1,3 @@
+programa E {
+  mi-var = 5;
+}

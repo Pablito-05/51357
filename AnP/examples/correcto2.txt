@@ -1,0 +1,3 @@
+programa P {
+  procesar { imprimir(10/2); } manejarError(e) { imprimir("Error: " + e); };
+}
