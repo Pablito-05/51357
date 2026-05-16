@@ -1,6 +1,6 @@
-# Analizador Sintáctico - Tema 51357_6
+# Analizador Sintáctico - Tema 39568_6
 Materia: Sintaxis y Semántica de los Lenguajes de Programación  
-Legajo: TU_LEGAJO  
+Legajo: 51357  
 Universidad: UTN - FRM
 ---
 ## Descripción
@@ -16,8 +16,8 @@ Ejemplo de código válido en el lenguaje:
 ---
 ## Instalación
 ```bash
-git clone https://github.com/TU_LEGAJO/TU_LEGAJO.git
-cd TU_LEGAJO
+git clone https://github.com/Pablito-05/51357.git
+cd 51357
 npm install
 ```
 ---

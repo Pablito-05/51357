@@ -105,14 +105,6 @@ public class ProgramaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_programa; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).enterPrograma(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).exitPrograma(this);
-		}
 	}
 
 	public final ProgramaContext programa() throws RecognitionException {
@@ -160,14 +152,6 @@ public class ProgramaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_instruccion; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).enterInstruccion(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).exitInstruccion(this);
-		}
 	}
 
 	public final InstruccionContext instruccion() throws RecognitionException {
@@ -214,14 +198,6 @@ public class ProgramaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_conteo; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).enterConteo(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).exitConteo(this);
-		}
 	}
 
 	public final ConteoContext conteo() throws RecognitionException {
@@ -291,14 +267,6 @@ public class ProgramaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sentencia; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).enterSentencia(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).exitSentencia(this);
-		}
 	}
 
 	public final SentenciaContext sentencia() throws RecognitionException {
@@ -367,14 +335,6 @@ public class ProgramaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_salida; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).enterSalida(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).exitSalida(this);
-		}
 	}
 
 	public final SalidaContext salida() throws RecognitionException {
@@ -414,14 +374,6 @@ public class ProgramaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_terminar; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).enterTerminar(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ProgramaListener ) ((ProgramaListener)listener).exitTerminar(this);
-		}
 	}
 
 	public final TerminarContext terminar() throws RecognitionException {

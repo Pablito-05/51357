@@ -10,7 +10,6 @@ let input;
 try {
     input = fs.readFileSync(archivo, 'utf8');
     console.log(`\nAnalizando archivo: ${archivo}`);
-    console.log("Contenido leído:", JSON.stringify(input));
 } catch (err) {
     console.error(`No se pudo leer el archivo: ${archivo}`);
     process.exit(1);
