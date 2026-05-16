@@ -1,0 +1,8 @@
+para contador desde 1 hasta 3 hacer {
+    imprimir("Inicio del ciclo");
+    imprimir("Iterando...");
+}
+para j desde 5 hasta 5 hacer {
+    imprimir("Un solo ciclo");
+    salir;
+}
